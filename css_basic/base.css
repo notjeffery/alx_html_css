@@ -1,0 +1,36 @@
+/* base.css - basic reset and styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+footer {
+  border-top: 2px solid #333;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
