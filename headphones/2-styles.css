@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'HolbertonSchoolIcon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype'),
+       url('fonts/holberton_school-icon.svg#HolbertonSchoolIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'HolbertonSchoolIcon';
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+
+/* Reset and base variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565;
+  --white: #fff;
+  --black: #071629;
+  --max-width: 1000px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Utility container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+  z-index: 1000;
+  background: transparent;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: var(--white);
+  padding: 200px 20px 100px;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+.hero p {
+  margin-top: 30px;
+  font-size: 14px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .main-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 150px 20px 60px;
+  }
+}
+
+.what-we-do {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.what-we-do p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.service-item {
+  width: 180px;
+  text-align: center;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+.results {
+  background: url('images/section-background.png') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.results p {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.result-box {
+  width: 120px;
+  height: 120px;
+  background-color: #FF6565;
+  clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 20% 100%, 0 35%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.result-box h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.result-box p {
+  font-size: 14px;
+  margin: 0;
+  align-self: bottom;
+}
+
+.results {
+  background-color: red;
+}
